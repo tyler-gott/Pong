@@ -18,16 +18,16 @@ public class Controller {
 
         switch (event.getCode()) {
             case W:
-                p1paddle.setY(heightP1-10);
+                p1paddle.setY(heightP1-15);
                 break;
             case S:
-                p1paddle.setY(heightP1+10);
+                p1paddle.setY(heightP1+15);
                 break;
             case UP:
-                p2paddle.setY(heightP2-10);
+                p2paddle.setY(heightP2-15);
                 break;
             case DOWN:
-                p2paddle.setY(heightP2+10);
+                p2paddle.setY(heightP2+15);
                 break;
             default:
                 System.out.println("Invalid key");
