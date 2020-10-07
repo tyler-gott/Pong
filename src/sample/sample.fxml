@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="pane" onKeyPressed="#paddleMove" prefHeight="600" prefWidth="800" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <Rectangle fx:id="p1paddle" fill="WHITE" height="100" width="15.0" y="250.0" AnchorPane.leftAnchor="5.0" />
+        <Rectangle fx:id="p2paddle" fill="WHITE" height="100" width="15.0" y="250.0" AnchorPane.rightAnchor="5.0" />
+        <Circle fx:id="ball" fill="WHITE" layoutX="418.0" layoutY="283.0" radius="10.0" />
+        <Label text="P1 SCORE" textFill="WHITE" AnchorPane.leftAnchor="175.0" AnchorPane.topAnchor="100.0">
+            <font>
+                <Font name="Consolas Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label text="P2 SCORE" textFill="WHITE" AnchorPane.rightAnchor="175.0" AnchorPane.topAnchor="100.0">
+            <font>
+                <Font name="Consolas Bold" size="24.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
