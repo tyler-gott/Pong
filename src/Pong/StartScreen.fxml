@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pong.Controller">
+    <children>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="279.0" layoutY="93.0" text="PONG FX" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="120.0">
+            <font>
+                <Font name="Consolas Bold" size="64.0" />
+            </font>
+        </Label>
+        <Button fx:id="startButton" mnemonicParsing="false" onAction="#startGame" text="Start Game" AnchorPane.leftAnchor="320.0" AnchorPane.rightAnchor="320.0" AnchorPane.topAnchor="300.0">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" onAction="#controlsScreen" text="Controls" AnchorPane.leftAnchor="320.0" AnchorPane.rightAnchor="320.0" AnchorPane.topAnchor="380.0">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Button>
+        <AnchorPane fx:id="controlsScreen" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #525252;" visible="false" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="100.0">
+            <children>
+                <Label alignment="CENTER" text="Click the screen to begin&#10;&#10;Player 1 uses W and S to move&#10;&#10;Player 2 uses the up arrow and down arrow&#10;&#10;Press Escape to pause the game&#10;&#10;After scoring, click the screen to play&#10;another point&#10;" textAlignment="CENTER" textFill="WHITE" wrapText="true" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0">
+                    <font>
+                        <Font name="Consolas" size="14.0" />
+                    </font></Label>
+                <Button mnemonicParsing="false" onAction="#closeControls" text="Back to Start" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" />
+            </children></AnchorPane>
+    </children>
+</AnchorPane>

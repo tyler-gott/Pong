@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="pane" onKeyPressed="#paddleMove" onKeyReleased="#paddleStop" onMouseClicked="#resetBoard" prefHeight="600" prefWidth="800" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pong.Controller">
+    <children>
+        <Rectangle fx:id="p1paddle" fill="WHITE" height="100" width="15.0" y="250.0" AnchorPane.leftAnchor="5.0" />
+        <Rectangle fx:id="p2paddle" fill="WHITE" height="100" width="15.0" y="250.0" AnchorPane.rightAnchor="5.0" />
+        <Circle fx:id="ball" fill="WHITE" layoutX="400.0" layoutY="300.0" radius="10.0" />
+        <Label alignment="CENTER" contentDisplay="CENTER" text="P1 SCORE" textFill="WHITE" AnchorPane.leftAnchor="175.0" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="60.0">
+            <font>
+                <Font name="Consolas Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" contentDisplay="CENTER" text="P2 SCORE" textFill="WHITE" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="175.0" AnchorPane.topAnchor="60.0">
+            <font>
+                <Font name="Consolas Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="p1Score" alignment="CENTER" text="0" textFill="WHITE" AnchorPane.leftAnchor="175.0" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="100.0">
+            <font>
+                <Font name="Consolas Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="p2Score" alignment="CENTER" text="0" textFill="WHITE" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="175.0" AnchorPane.topAnchor="100.0">
+            <font>
+                <Font name="Consolas Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="win" alignment="CENTER" contentDisplay="CENTER" textFill="WHITE" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="150.0">
+            <font>
+                <Font name="Consolas Bold" size="24.0" />
+            </font>
+        </Label>
+        <AnchorPane fx:id="pauseScreen" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #525252;" visible="false" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="200.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#unpauseGame" text="Resume" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="60.0" />
+                <Button mnemonicParsing="false" onAction="#stopGame" text="Stop Game" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="110.0" />
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="endScreen" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #525252;" visible="false" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="200.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#restartGame" text="Restart" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="60.0" />
+                <Button mnemonicParsing="false" onAction="#stopGame" text="Stop Game" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="110.0" />
+            </children></AnchorPane>
+    </children>
+</AnchorPane>
